@@ -43,7 +43,7 @@ void display_logo() {
 
 typedef struct {
     char name[50];
-    char symbol; // X أو O
+    char symbol;
 } Player;
 
 void display_board(char board[3][3]) {
