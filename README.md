@@ -51,9 +51,13 @@ for (int i = 0; i < 3; i++) {
 
 ## 6. Pointers, arrays, and strings:
 `arrays`: تم استخدام المصفوفات في عدة أماكن:
+
 -char board[3][3], مصفوفة 2D لتمثيل اللوحة.
+
 -char name[50], مصفوفة من الأحرف لتخزين اسم اللاعب.
+
 -`strings`: استخدام السلاسل النصية لتخزين أسماء اللاعبين باستخدام strncpy أو snprintf في دالة main.
+
 -`Pointers`: استخدام المؤشرات عند التعامل مع السلاسل النصية، مثل:
 
 snprintf(players[0].name, 50, "%s", argv[1]);
