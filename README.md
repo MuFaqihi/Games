@@ -17,13 +17,13 @@
 
 مثال على الشروط:
 
-```c
+
 if (board[i][0] == symbol && board[i][1] == symbol && board[i][2] == symbol)
     return true;
 
 ## 3.while:
 يتم استخدام حلقة while في دالة main لمتابعة اللعبة حتى يتم العثور على فائز أو تصل اللعبة إلى تعادل:
-```c
+
 while (!winner_found && !is_full(board)) {
   اللعبة تستمر حتى يتم العثور على فائز أو تمتلئ اللوحة
 }
@@ -39,7 +39,7 @@ while (!winner_found && !is_full(board)) {
 
 ## 5. Nested loops (الحلقات المتداخلة):
 تم استخدام حلقات متداخلة في دالة display_board لطباعة محتويات اللوحة:
-```c
+
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 3; j++) {
         printf(" %c ", board[i][j]);
@@ -55,7 +55,7 @@ for (int i = 0; i < 3; i++) {
 -char name[50], مصفوفة من الأحرف لتخزين اسم اللاعب.
 -`strings`: استخدام السلاسل النصية لتخزين أسماء اللاعبين باستخدام strncpy أو snprintf في دالة main.
 -`Pointers`: استخدام المؤشرات عند التعامل مع السلاسل النصية، مثل:
-```c
+
 snprintf(players[0].name, 50, "%s", argv[1]);
 
 ## 7. argc, argv (عدد المعاملات والمدخلات من سطر الأوامر):
@@ -63,7 +63,7 @@ snprintf(players[0].name, 50, "%s", argv[1]);
 
 -`argc`: عدد المعاملات المدخلة من سطر الأوامر.
 -`argv`: مصفوفة تحتوي على المعاملات المدخلة (مثل أسماء اللاعبين).
-```c
+
 if (argc > 2) {
     snprintf(players[0].name, 50, "%s", argv[1]);
     snprintf(players[1].name, 50, "%s", argv[2]);
@@ -78,7 +78,7 @@ if (argc > 2) {
 `Player`: هيكل يحتوي على name (اسم اللاعب) و symbol (رمز اللاعب مثل 'X' أو 'O').
 وفيما يتعلق بـ typedef، تم تعريف النوع Player ليصبح نوعًا مخصصًا يمكن استخدامه في البرنامج:
 
-```c
+
 typedef struct {
     char name[50];
     char symbol;
